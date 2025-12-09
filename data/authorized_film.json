@@ -1,0 +1,93 @@
+{
+  "id": "authorized_film",
+  "name": "Authorized Film Crew",
+  "threat_level": "authorized",
+  "description": "Professional cinema drone with valid permit conducting authorized filming",
+  "rf": {
+    "score": 98.0,
+    "frequency": 2400000000.0,
+    "bandwidth": 20000000.0,
+    "modulation": "professional_cinema",
+    "signal_strength": -48.5,
+    "characteristics": {
+      "pwm_detected": true,
+      "encryption_detected": false,
+      "professional_signature": true
+    }
+  },
+  "visual": {
+    "detected": true,
+    "confidence": 95.0,
+    "objects": [
+      {
+        "type": "quadcopter",
+        "classification": "professional_cinema",
+        "bbox": [
+          480,
+          320,
+          220,
+          160
+        ],
+        "altitude_meters": 95.0,
+        "distance_meters": 280.0,
+        "confidence": 95.0,
+        "markings": "permit_visible",
+        "flight_pattern": "stable"
+      }
+    ],
+    "weather_conditions": "clear"
+  },
+  "audio": {
+    "score": 90.0,
+    "motor_count": 4,
+    "frequency_peaks": [
+      130,
+      260,
+      420,
+      840,
+      8500
+    ],
+    "background_noise_level": 0.2,
+    "characteristics": {
+      "motor_signature": "professional_grade",
+      "flight_stability": "high"
+    }
+  },
+  "context": {
+    "location": {
+      "latitude": 50.8503,
+      "longitude": 4.3517,
+      "name": "Grand Place Brussels",
+      "type": "public_space"
+    },
+    "weather": {
+      "conditions": "clear",
+      "visibility_meters": 14000,
+      "wind_speed_ms": 2.8,
+      "temperature_celsius": 20.0
+    },
+    "permits": [
+      {
+        "permit_id": "BE-2024-FILM-0042",
+        "operator": "Brussels Film Productions SPRL",
+        "drone_type": "DJI Inspire 3",
+        "valid_from": "2025-12-09T08:00:43.440761",
+        "valid_until": "2025-12-09T12:00:43.440771",
+        "max_altitude_meters": 120.0,
+        "purpose": "commercial_filming"
+      }
+    ],
+    "events": [
+      {
+        "name": "Documentary Filming",
+        "type": "film_production",
+        "expected_drones": true
+      }
+    ],
+    "airspace": "authorized",
+    "active_flights": 0
+  },
+  "spectrogram_file": "authorized_film.png",
+  "spectrogram_url": "https://akusingh.github.io/drone-threat-assets/spectrograms/authorized_film.png",
+  "timestamp": "2025-12-09T10:00:43.440775"
+}

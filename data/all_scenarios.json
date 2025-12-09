@@ -1,0 +1,329 @@
+[
+  {
+    "id": "nuclear_breach",
+    "name": "Nuclear Plant Breach",
+    "threat_level": "high",
+    "description": "Military-grade drone with encrypted communications approaching nuclear facility",
+    "rf": {
+      "score": 99.8,
+      "frequency": 2400000000.0,
+      "bandwidth": 20000000.0,
+      "modulation": "military_encrypted",
+      "signal_strength": -45.2,
+      "characteristics": {
+        "pwm_detected": true,
+        "encryption_detected": true,
+        "military_signature": true
+      }
+    },
+    "visual": {
+      "detected": true,
+      "confidence": 85.0,
+      "objects": [
+        {
+          "type": "hexacopter",
+          "classification": "commercial_appearance",
+          "bbox": [
+            450,
+            300,
+            200,
+            150
+          ],
+          "altitude_meters": 120.0,
+          "distance_meters": 350.0,
+          "confidence": 85.0
+        }
+      ],
+      "weather_conditions": "clear"
+    },
+    "audio": {
+      "score": 78.0,
+      "motor_count": 6,
+      "frequency_peaks": [
+        150,
+        300,
+        450,
+        900,
+        9500
+      ],
+      "background_noise_level": 0.15,
+      "characteristics": {
+        "motor_signature": "non_commercial",
+        "esc_frequency": "military_grade"
+      }
+    },
+    "context": {
+      "location": {
+        "latitude": 50.4673,
+        "longitude": 4.8719,
+        "name": "Tihange Nuclear Power Station",
+        "type": "critical_infrastructure"
+      },
+      "weather": {
+        "conditions": "clear",
+        "visibility_meters": 15000,
+        "wind_speed_ms": 3.2,
+        "temperature_celsius": 18.5
+      },
+      "permits": [],
+      "events": [],
+      "airspace": "restricted",
+      "active_flights": 0
+    },
+    "spectrogram_file": "nuclear_breach.png",
+    "spectrogram_url": "https://akusingh.github.io/drone-threat-assets/spectrograms/nuclear_breach.png",
+    "timestamp": "2025-12-09T10:00:43.266181"
+  },
+  {
+    "id": "stadium_threat",
+    "name": "Stadium Crowd Safety",
+    "threat_level": "high",
+    "description": "Consumer drone with erratic flight pattern approaching 80,000 spectators",
+    "rf": {
+      "score": 95.0,
+      "frequency": 2400000000.0,
+      "bandwidth": 20000000.0,
+      "modulation": "dji_protocol",
+      "signal_strength": -52.8,
+      "characteristics": {
+        "pwm_detected": true,
+        "encryption_detected": false,
+        "commercial_signature": true
+      }
+    },
+    "visual": {
+      "detected": true,
+      "confidence": 92.0,
+      "objects": [
+        {
+          "type": "quadcopter",
+          "classification": "consumer_dji",
+          "bbox": [
+            520,
+            280,
+            180,
+            140
+          ],
+          "altitude_meters": 85.0,
+          "distance_meters": 220.0,
+          "confidence": 92.0,
+          "flight_pattern": "erratic"
+        }
+      ],
+      "weather_conditions": "clear"
+    },
+    "audio": {
+      "score": 88.0,
+      "motor_count": 4,
+      "frequency_peaks": [
+        120,
+        240,
+        400,
+        800,
+        8000
+      ],
+      "background_noise_level": 0.45,
+      "characteristics": {
+        "motor_signature": "consumer_grade",
+        "crowd_noise": "high"
+      }
+    },
+    "context": {
+      "location": {
+        "latitude": 50.8951,
+        "longitude": 4.3414,
+        "name": "King Baudouin Stadium",
+        "type": "public_venue"
+      },
+      "weather": {
+        "conditions": "clear",
+        "visibility_meters": 12000,
+        "wind_speed_ms": 4.5,
+        "temperature_celsius": 22.0
+      },
+      "permits": [],
+      "events": [
+        {
+          "name": "International Football Match",
+          "type": "sports",
+          "attendees": 80000,
+          "status": "in_progress"
+        }
+      ],
+      "airspace": "restricted_during_event",
+      "active_flights": 0
+    },
+    "spectrogram_file": "stadium_threat.png",
+    "spectrogram_url": "https://akusingh.github.io/drone-threat-assets/spectrograms/stadium_threat.png",
+    "timestamp": "2025-12-09T10:00:43.356944"
+  },
+  {
+    "id": "authorized_film",
+    "name": "Authorized Film Crew",
+    "threat_level": "authorized",
+    "description": "Professional cinema drone with valid permit conducting authorized filming",
+    "rf": {
+      "score": 98.0,
+      "frequency": 2400000000.0,
+      "bandwidth": 20000000.0,
+      "modulation": "professional_cinema",
+      "signal_strength": -48.5,
+      "characteristics": {
+        "pwm_detected": true,
+        "encryption_detected": false,
+        "professional_signature": true
+      }
+    },
+    "visual": {
+      "detected": true,
+      "confidence": 95.0,
+      "objects": [
+        {
+          "type": "quadcopter",
+          "classification": "professional_cinema",
+          "bbox": [
+            480,
+            320,
+            220,
+            160
+          ],
+          "altitude_meters": 95.0,
+          "distance_meters": 280.0,
+          "confidence": 95.0,
+          "markings": "permit_visible",
+          "flight_pattern": "stable"
+        }
+      ],
+      "weather_conditions": "clear"
+    },
+    "audio": {
+      "score": 90.0,
+      "motor_count": 4,
+      "frequency_peaks": [
+        130,
+        260,
+        420,
+        840,
+        8500
+      ],
+      "background_noise_level": 0.2,
+      "characteristics": {
+        "motor_signature": "professional_grade",
+        "flight_stability": "high"
+      }
+    },
+    "context": {
+      "location": {
+        "latitude": 50.8503,
+        "longitude": 4.3517,
+        "name": "Grand Place Brussels",
+        "type": "public_space"
+      },
+      "weather": {
+        "conditions": "clear",
+        "visibility_meters": 14000,
+        "wind_speed_ms": 2.8,
+        "temperature_celsius": 20.0
+      },
+      "permits": [
+        {
+          "permit_id": "BE-2024-FILM-0042",
+          "operator": "Brussels Film Productions SPRL",
+          "drone_type": "DJI Inspire 3",
+          "valid_from": "2025-12-09T08:00:43.440761",
+          "valid_until": "2025-12-09T12:00:43.440771",
+          "max_altitude_meters": 120.0,
+          "purpose": "commercial_filming"
+        }
+      ],
+      "events": [
+        {
+          "name": "Documentary Filming",
+          "type": "film_production",
+          "expected_drones": true
+        }
+      ],
+      "airspace": "authorized",
+      "active_flights": 0
+    },
+    "spectrogram_file": "authorized_film.png",
+    "spectrogram_url": "https://akusingh.github.io/drone-threat-assets/spectrograms/authorized_film.png",
+    "timestamp": "2025-12-09T10:00:43.440775"
+  },
+  {
+    "id": "foggy_conflict",
+    "name": "Foggy Conflict Resolution",
+    "threat_level": "medium",
+    "description": "Strong RF detection but poor visual confirmation due to heavy fog",
+    "rf": {
+      "score": 92.0,
+      "frequency": 2400000000.0,
+      "bandwidth": 20000000.0,
+      "modulation": "consumer_protocol",
+      "signal_strength": -55.3,
+      "characteristics": {
+        "pwm_detected": true,
+        "encryption_detected": false,
+        "signal_quality": "good_despite_weather"
+      }
+    },
+    "visual": {
+      "detected": true,
+      "confidence": 45.0,
+      "objects": [
+        {
+          "type": "unknown",
+          "classification": "uncertain_due_to_fog",
+          "bbox": [
+            400,
+            350,
+            150,
+            120
+          ],
+          "altitude_meters": 75.0,
+          "distance_meters": 180.0,
+          "confidence": 45.0,
+          "visibility": "poor"
+        }
+      ],
+      "weather_conditions": "fog"
+    },
+    "audio": {
+      "score": 55.0,
+      "motor_count": 4,
+      "frequency_peaks": [
+        140,
+        280,
+        410,
+        820,
+        7800
+      ],
+      "background_noise_level": 0.35,
+      "characteristics": {
+        "motor_signature": "faint",
+        "weather_interference": "high"
+      }
+    },
+    "context": {
+      "location": {
+        "latitude": 50.9014,
+        "longitude": 4.4844,
+        "name": "Brussels Airport Perimeter",
+        "type": "airport_vicinity"
+      },
+      "weather": {
+        "conditions": "fog",
+        "visibility_meters": 800,
+        "wind_speed_ms": 1.5,
+        "temperature_celsius": 12.0
+      },
+      "permits": [],
+      "events": [],
+      "airspace": "restricted",
+      "active_flights": 12
+    },
+    "spectrogram_file": "foggy_conflict.png",
+    "spectrogram_url": "https://akusingh.github.io/drone-threat-assets/spectrograms/foggy_conflict.png",
+    "timestamp": "2025-12-09T10:00:43.533292"
+  }
+]

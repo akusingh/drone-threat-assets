@@ -1,0 +1,75 @@
+{
+  "id": "nuclear_breach",
+  "name": "Nuclear Plant Breach",
+  "threat_level": "high",
+  "description": "Military-grade drone with encrypted communications approaching nuclear facility",
+  "rf": {
+    "score": 99.8,
+    "frequency": 2400000000.0,
+    "bandwidth": 20000000.0,
+    "modulation": "military_encrypted",
+    "signal_strength": -45.2,
+    "characteristics": {
+      "pwm_detected": true,
+      "encryption_detected": true,
+      "military_signature": true
+    }
+  },
+  "visual": {
+    "detected": true,
+    "confidence": 85.0,
+    "objects": [
+      {
+        "type": "hexacopter",
+        "classification": "commercial_appearance",
+        "bbox": [
+          450,
+          300,
+          200,
+          150
+        ],
+        "altitude_meters": 120.0,
+        "distance_meters": 350.0,
+        "confidence": 85.0
+      }
+    ],
+    "weather_conditions": "clear"
+  },
+  "audio": {
+    "score": 78.0,
+    "motor_count": 6,
+    "frequency_peaks": [
+      150,
+      300,
+      450,
+      900,
+      9500
+    ],
+    "background_noise_level": 0.15,
+    "characteristics": {
+      "motor_signature": "non_commercial",
+      "esc_frequency": "military_grade"
+    }
+  },
+  "context": {
+    "location": {
+      "latitude": 50.4673,
+      "longitude": 4.8719,
+      "name": "Tihange Nuclear Power Station",
+      "type": "critical_infrastructure"
+    },
+    "weather": {
+      "conditions": "clear",
+      "visibility_meters": 15000,
+      "wind_speed_ms": 3.2,
+      "temperature_celsius": 18.5
+    },
+    "permits": [],
+    "events": [],
+    "airspace": "restricted",
+    "active_flights": 0
+  },
+  "spectrogram_file": "nuclear_breach.png",
+  "spectrogram_url": "https://akusingh.github.io/drone-threat-assets/spectrograms/nuclear_breach.png",
+  "timestamp": "2025-12-09T10:00:43.266181"
+}

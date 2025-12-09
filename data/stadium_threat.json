@@ -1,0 +1,83 @@
+{
+  "id": "stadium_threat",
+  "name": "Stadium Crowd Safety",
+  "threat_level": "high",
+  "description": "Consumer drone with erratic flight pattern approaching 80,000 spectators",
+  "rf": {
+    "score": 95.0,
+    "frequency": 2400000000.0,
+    "bandwidth": 20000000.0,
+    "modulation": "dji_protocol",
+    "signal_strength": -52.8,
+    "characteristics": {
+      "pwm_detected": true,
+      "encryption_detected": false,
+      "commercial_signature": true
+    }
+  },
+  "visual": {
+    "detected": true,
+    "confidence": 92.0,
+    "objects": [
+      {
+        "type": "quadcopter",
+        "classification": "consumer_dji",
+        "bbox": [
+          520,
+          280,
+          180,
+          140
+        ],
+        "altitude_meters": 85.0,
+        "distance_meters": 220.0,
+        "confidence": 92.0,
+        "flight_pattern": "erratic"
+      }
+    ],
+    "weather_conditions": "clear"
+  },
+  "audio": {
+    "score": 88.0,
+    "motor_count": 4,
+    "frequency_peaks": [
+      120,
+      240,
+      400,
+      800,
+      8000
+    ],
+    "background_noise_level": 0.45,
+    "characteristics": {
+      "motor_signature": "consumer_grade",
+      "crowd_noise": "high"
+    }
+  },
+  "context": {
+    "location": {
+      "latitude": 50.8951,
+      "longitude": 4.3414,
+      "name": "King Baudouin Stadium",
+      "type": "public_venue"
+    },
+    "weather": {
+      "conditions": "clear",
+      "visibility_meters": 12000,
+      "wind_speed_ms": 4.5,
+      "temperature_celsius": 22.0
+    },
+    "permits": [],
+    "events": [
+      {
+        "name": "International Football Match",
+        "type": "sports",
+        "attendees": 80000,
+        "status": "in_progress"
+      }
+    ],
+    "airspace": "restricted_during_event",
+    "active_flights": 0
+  },
+  "spectrogram_file": "stadium_threat.png",
+  "spectrogram_url": "https://akusingh.github.io/drone-threat-assets/spectrograms/stadium_threat.png",
+  "timestamp": "2025-12-09T10:00:43.356944"
+}

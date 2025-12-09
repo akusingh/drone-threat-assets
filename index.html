@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Threat Analyzer - Proof Assets</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0a0e27;
+            color: #e0e0e0;
+        }
+        h1 {
+            color: #4fc3f7;
+            border-bottom: 2px solid #4fc3f7;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #81c784;
+            margin-top: 30px;
+        }
+        .scenario {
+            background: #1a1f3a;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #4fc3f7;
+        }
+        .scenario.high {
+            border-left-color: #ef5350;
+        }
+        .scenario.authorized {
+            border-left-color: #66bb6a;
+        }
+        .scenario.medium {
+            border-left-color: #ffa726;
+        }
+        .spectrogram {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .badge.high {
+            background: #ef5350;
+            color: white;
+        }
+        .badge.authorized {
+            background: #66bb6a;
+            color: white;
+        }
+        .badge.medium {
+            background: #ffa726;
+            color: white;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .stat {
+            background: #0d1229;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .stat-label {
+            color: #9e9e9e;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4fc3f7;
+        }
+        code {
+            background: #0d1229;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛡️ Multimodal Drone Threat Analyzer - Proof Assets</h1>
+    <p>Pre-computed RF spectrograms and scenario data for hackathon demo.</p>
+    
+    <h2>📊 Demo Scenarios</h2>
+    
+    <div class="scenario high">
+        <h3>
+            <span class="badge high">HIGH THREAT</span>
+            Scenario 1: Nuclear Plant Breach
+        </h3>
+        <p>Military-grade drone with encrypted communications approaching nuclear facility.</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-label">RF Score</div>
+                <div class="stat-value">99.8%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Visual Confidence</div>
+                <div class="stat-value">85.0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Audio Score</div>
+                <div class="stat-value">78.0%</div>
+            </div>
+        </div>
+        <img src="spectrograms/nuclear_breach.png" alt="Nuclear Breach Spectrogram" class="spectrogram">
+        <p>
+            <a href="spectrograms/nuclear_breach.png" target="_blank">View Spectrogram</a> | 
+            <a href="data/nuclear_breach.json" target="_blank">View Data (JSON)</a>
+        </p>
+    </div>
+    
+    <div class="scenario high">
+        <h3>
+            <span class="badge high">HIGH THREAT</span>
+            Scenario 2: Stadium Crowd Safety
+        </h3>
+        <p>Consumer drone with erratic flight pattern approaching 80,000 spectators.</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-label">RF Score</div>
+                <div class="stat-value">95.0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Visual Confidence</div>
+                <div class="stat-value">92.0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Audio Score</div>
+                <div class="stat-value">88.0%</div>
+            </div>
+        </div>
+        <img src="spectrograms/stadium_threat.png" alt="Stadium Threat Spectrogram" class="spectrogram">
+        <p>
+            <a href="spectrograms/stadium_threat.png" target="_blank">View Spectrogram</a> | 
+            <a href="data/stadium_threat.json" target="_blank">View Data (JSON)</a>
+        </p>
+    </div>
+    
+    <div class="scenario authorized">
+        <h3>
+            <span class="badge authorized">AUTHORIZED</span>
+            Scenario 3: Authorized Film Crew
+        </h3>
+        <p>Professional cinema drone with valid permit conducting authorized filming.</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-label">RF Score</div>
+                <div class="stat-value">98.0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Visual Confidence</div>
+                <div class="stat-value">95.0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Audio Score</div>
+                <div class="stat-value">90.0%</div>
+            </div>
+        </div>
+        <img src="spectrograms/authorized_film.png" alt="Authorized Film Spectrogram" class="spectrogram">
+        <p>
+            <a href="spectrograms/authorized_film.png" target="_blank">View Spectrogram</a> | 
+            <a href="data/authorized_film.json" target="_blank">View Data (JSON)</a>
+        </p>
+    </div>
+    
+    <div class="scenario medium">
+        <h3>
+            <span class="badge medium">MEDIUM THREAT</span>
+            Scenario 4: Foggy Conflict Resolution
+        </h3>
+        <p>Strong RF detection but poor visual confirmation due to heavy fog.</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-label">RF Score</div>
+                <div class="stat-value">92.0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Visual Confidence</div>
+                <div class="stat-value">45.0%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Audio Score</div>
+                <div class="stat-value">55.0%</div>
+            </div>
+        </div>
+        <img src="spectrograms/foggy_conflict.png" alt="Foggy Conflict Spectrogram" class="spectrogram">
+        <p>
+            <a href="spectrograms/foggy_conflict.png" target="_blank">View Spectrogram</a> | 
+            <a href="data/foggy_conflict.json" target="_blank">View Data (JSON)</a>
+        </p>
+    </div>
+    
+    <h2>📦 Download All Data</h2>
+    <p>
+        <a href="data/all_scenarios.json" target="_blank">Download all_scenarios.json</a> - 
+        Combined data for all 4 scenarios
+    </p>
+    
+    <h2>🚀 Usage in AI Studio</h2>
+    <p>Copy the spectrogram URLs and use them in your AI Studio Build dashboard:</p>
+    <pre><code>const SCENARIOS = {
+  nuclear_breach: {
+    spectrogram_url: "https://YOUR_USERNAME.github.io/YOUR_REPO/spectrograms/nuclear_breach.png",
+    // ... other data
+  }
+}</code></pre>
+    
+    <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #333; text-align: center; color: #666;">
+        <p>Multimodal Drone Threat Analyzer | Gemini 3 Pro Hackathon 2024</p>
+    </footer>
+</body>
+</html>
